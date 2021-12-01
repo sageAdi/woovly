@@ -1,0 +1,200 @@
+{
+    "categories": [
+     {
+      "image": "",
+      "url": "https://shop.woovly.com/collections/makeup-page",
+      "categoryName": "Makeup",
+      "categoryName_url": "https://shop.woovly.com/collections/makeup-page"
+     },
+     {
+      "image": "",
+      "url": "https://shop.woovly.com/collections/face-store",
+      "categoryName": "Skin care",
+      "categoryName_url": "https://shop.woovly.com/collections/face-store"
+     },
+     {
+      "image": "",
+      "url": "https://shop.woovly.com/collections/bath-and-body-store",
+      "categoryName": "Bath & Body",
+      "categoryName_url": "https://shop.woovly.com/collections/bath-and-body-store"
+     },
+     {
+      "image": "",
+      "url": "https://shop.woovly.com/collections/intimate-hygiene-store",
+      "categoryName": "Personal Care",
+      "categoryName_url": "https://shop.woovly.com/collections/intimate-hygiene-store"
+     },
+     {
+      "image": "",
+      "url": "https://shop.woovly.com/collections/hair-store",
+      "categoryName": "Hair",
+      "categoryName_url": "https://shop.woovly.com/collections/hair-store"
+     },
+     {
+      "image": "",
+      "url": "https://shop.woovly.com/collections/fragrance-store",
+      "categoryName": "Fragrance",
+      "categoryName_url": "https://shop.woovly.com/collections/fragrance-store"
+     },
+     {
+      "image": "",
+      "url": "https://shop.woovly.com/collections/aromatherapy",
+      "categoryName": "Aromatherapy",
+      "categoryName_url": "https://shop.woovly.com/collections/aromatherapy"
+     }
+    ],
+    "featuredBrands": [
+     {
+      "image": "https://cdn.shopify.com/s/files/1/0522/7020/3059/files/m_caffeine_280x.png?v=1633686614",
+      "url": "https://shop.woovly.com/collections/mcaffeine"
+     },
+     {
+      "image": "https://cdn.shopify.com/s/files/1/0522/7020/3059/files/skinsecretsindia_280x.png?v=1633686644",
+      "url": "https://shop.woovly.com/collections/skin-secrets"
+     },
+     {
+      "image": "https://cdn.shopify.com/s/files/1/0522/7020/3059/files/pee_safe_280x.png?v=1633686674",
+      "url": "https://shop.woovly.com/collections/pee-safe"
+     },
+     {
+      "image": "https://cdn.shopify.com/s/files/1/0522/7020/3059/files/letshave_280x.png?v=1633686778",
+      "url": "https://shop.woovly.com/collections/letsshave"
+     },
+     {
+      "image": "https://cdn.shopify.com/s/files/1/0522/7020/3059/files/auric_1627e18d-21c8-4014-86d1-6c02c58c1070_280x.png?v=1633686804",
+      "url": "https://shop.woovly.com/collections/auric"
+     },
+     {
+      "image": "https://cdn.shopify.com/s/files/1/0522/7020/3059/files/tru_hair_280x.png?v=1633686866",
+      "url": "https://shop.woovly.com/collections/tru-hair"
+     }
+    ],
+    "featuredProducts": [
+     {
+      "image": "",
+      "url": "https://shop.woovly.com/collections/featured/products/sanfe-breast-nipple-caring-balm-for-new-mothers-15gm-with-calendula-oil-cocoa-butter-strawberry",
+      "name": "Sanfe Breast Nipple Caring Balm for New Mothers",
+      "name_url": "https://shop.woovly.com/collections/featured/products/sanfe-breast-nipple-caring-balm-for-new-mothers-15gm-with-calendula-oil-cocoa-butter-strawberry",
+      "company": "Sanfe",
+      "company_url": "https://shop.woovly.com/collections/sanfe",
+      "priceNew": "Sale price\n₹ 79",
+      "soldOption": "Sold out"
+     },
+     {
+      "image": "",
+      "url": "https://shop.woovly.com/collections/featured/products/lotus-botanicals-natural-baking-soda-deep-cleansing-face-wash-180ml",
+      "name": "Lotus Botanicals Natural Baking Soda Deep Cleansing Face Wash",
+      "name_url": "https://shop.woovly.com/collections/featured/products/lotus-botanicals-natural-baking-soda-deep-cleansing-face-wash-180ml",
+      "company": "Lotus Botanicals",
+      "company_url": "https://shop.woovly.com/collections/lotus-botanicals",
+      "soldOption": "Sold out"
+     },
+     {
+      "image": "",
+      "url": "https://shop.woovly.com/collections/featured/products/naked-raw-coffee-face-wash-with-white-water-lily",
+      "name": "mCaffeine Naked and Raw Coffee Face Wash - 100ml",
+      "name_url": "https://shop.woovly.com/collections/featured/products/naked-raw-coffee-face-wash-with-white-water-lily",
+      "company": "mCaffeine",
+      "company_url": "https://shop.woovly.com/collections/mcaffeine",
+      "priceNew": "Sale price\n₹ 325",
+      "soldOption": "Add to cart"
+     },
+     {
+      "image": "",
+      "url": "https://shop.woovly.com/collections/featured/products/tru-hair-onion-hair-oil-with-heater-110ml",
+      "name": "Tru Hair – Onion Hair Oil with Heater – 110ml",
+      "name_url": "https://shop.woovly.com/collections/featured/products/tru-hair-onion-hair-oil-with-heater-110ml",
+      "company": "Tru Hair",
+      "company_url": "https://shop.woovly.com/collections/tru-hair",
+      "priceNew": "Sale price\n₹ 279",
+      "soldOption": "Add to cart"
+     },
+     {
+      "image": "",
+      "url": "https://shop.woovly.com/collections/featured/products/bamboo-toothbrush-charcoal-bristles-with-reusable-jute-pouch",
+      "name": "Bamboo Toothbrush Charcoal Bristles For Natural Whitening - The Bamboo Bae",
+      "name_url": "https://shop.woovly.com/collections/featured/products/bamboo-toothbrush-charcoal-bristles-with-reusable-jute-pouch",
+      "company": "The Bamboo Bae",
+      "company_url": "https://shop.woovly.com/collections/the-bamboo-bae",
+      "priceNew": "Sale price\n₹ 79",
+      "soldOption": "Add to cart"
+     }
+    ],
+    "hotDeals": [
+     {
+      "image": "",
+      "url": "https://shop.woovly.com/collections/hot-deals/products/mcaffeine-coffee-hair-spa-hair-fall-control-kit-shampoo-conditioner-hair-oil",
+      "offer": "Save 22%",
+      "productName": "mCaffeine Coffee Hair Spa & Hair Fall Control Kit - Shampoo Conditioner & Hair Oil",
+      "productName_url": "https://shop.woovly.com/collections/hot-deals/products/mcaffeine-coffee-hair-spa-hair-fall-control-kit-shampoo-conditioner-hair-oil",
+      "company": "mCaffeine",
+      "company_url": "https://shop.woovly.com/collections/mcaffeine",
+      "cart": "Add to cart"
+     },
+     {
+      "image": "",
+      "url": "https://shop.woovly.com/collections/hot-deals/products/panty-liners",
+      "offer": "Save 10%",
+      "productName": "Regular Panty Liners - Pack of 30 - The Woman's Company",
+      "productName_url": "https://shop.woovly.com/collections/hot-deals/products/panty-liners",
+      "company": "The Woman's Company",
+      "company_url": "https://shop.woovly.com/collections/vendors?q=The%20Woman%27s%20Company",
+      "cart": "Add to cart"
+     },
+     {
+      "image": "",
+      "url": "https://shop.woovly.com/collections/hot-deals/products/sweat-pads",
+      "offer": "Save 61%",
+      "productName": "PINQ Rash Free Ultra Thin Disposable Underarm Sweat Pads - Pack of 14",
+      "productName_url": "https://shop.woovly.com/collections/hot-deals/products/sweat-pads",
+      "company": "PINQ",
+      "company_url": "https://shop.woovly.com/collections/vendors?q=PINQ",
+      "cart": "Add to cart"
+     },
+     {
+      "image": "",
+      "url": "https://shop.woovly.com/collections/hot-deals/products/stand-and-pee-stick",
+      "productName": "Portable & Biodegradable Stand and Pee Stick - The Woman's Company",
+      "productName_url": "https://shop.woovly.com/collections/hot-deals/products/stand-and-pee-stick",
+      "company": "The Woman's Company",
+      "company_url": "https://shop.woovly.com/collections/vendors?q=The%20Woman%27s%20Company",
+      "cart": "Add to cart"
+     },
+     {
+      "image": "",
+      "url": "https://shop.woovly.com/collections/hot-deals/products/nipple-cover-pack-of-10",
+      "offer": "Save 20%",
+      "productName": "PINQ Organic Cotton Feel Ultra Thin Nipple Cover Pasties - Pack of 10",
+      "productName_url": "https://shop.woovly.com/collections/hot-deals/products/nipple-cover-pack-of-10",
+      "company": "PINQ",
+      "company_url": "https://shop.woovly.com/collections/vendors?q=PINQ",
+      "cart": "Add to cart"
+     }
+    ],
+    "newLaunch": [
+     {
+      "productName": "Furr By Pee Safe Natural Hair Tonic",
+      "productName_url": "https://shop.woovly.com/collections/newly-launched/products/furr-natural-hair-tonic-by-pee-safe",
+      "company": "Pee Safe",
+      "company_url": "https://shop.woovly.com/collections/pee-safe"
+     },
+     {
+      "productName": "Furr By Pee Safe Natural Hair Tonic",
+      "productName_url": "https://shop.woovly.com/collections/newly-launched/products/furr-natural-hair-tonic-by-pee-safe",
+      "company": "Pee Safe",
+      "company_url": "https://shop.woovly.com/collections/pee-safe"
+     },
+     {
+      "productName": "Furr By Pee Safe Natural Hair Tonic",
+      "productName_url": "https://shop.woovly.com/collections/newly-launched/products/furr-natural-hair-tonic-by-pee-safe",
+      "company": "Pee Safe",
+      "company_url": "https://shop.woovly.com/collections/pee-safe"
+     },
+     {
+      "productName": "Furr By Pee Safe Natural Hair Tonic",
+      "productName_url": "https://shop.woovly.com/collections/newly-launched/products/furr-natural-hair-tonic-by-pee-safe",
+      "company": "Pee Safe",
+      "company_url": "https://shop.woovly.com/collections/pee-safe"
+     }
+    ]
+   }

@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Categories from "./components/Categories/Categories";
+import FeaturedBrands from "./components/Featured Brands/FeaturedBrands";
+import FeaturedProducts from "./components/FeaturedProducts/FeaturedProducts";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import HotDeals from "./components/HotDeals/HotDeals";
+import Navabar from "./components/Navbar/Navbar";
+import NewLaunches from "./components/NewLaunch/NewLaunches";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#595959",
+      dark: "#212121",
+      light: "#677279",
+    },
+    secondary: {
+      main: "#d81222",
+    },
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ThemeProvider theme={theme}>
+        <Header />
+        <Navabar />
+        <Hero />
+        <Categories />
+        <FeaturedBrands />
+        <FeaturedProducts />
+        <HotDeals />
+        <NewLaunches />
+        <Footer />
+      </ThemeProvider>
+    </>
   );
 }
 

@@ -53,6 +53,14 @@ export default function ProductCards({
             >
               {company}
             </Typography>
+            <Typography
+              gutterBottom
+              component="div"
+              className={classes.cardText}
+              color="secondary"
+            >
+              {priceNew}
+            </Typography>
           </CardContent>
           <CardActions>
             <Button
@@ -61,9 +69,8 @@ export default function ProductCards({
               textAlign="start"
               color="secondary"
               variant="contained"
-              sx={{ position: "absolute", bottom: 0, marginTop: 10 }}
             >
-              {priceNew}
+              Add to Cart
             </Button>
           </CardActions>
         </CardActionArea>

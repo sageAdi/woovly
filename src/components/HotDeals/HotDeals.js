@@ -32,7 +32,7 @@ const HotDeals = () => {
       productName: "Regular Panty Liners - Pack of 30 - The Woman's Company",
       productName_url:
         "https://shop.woovly.com/collections/hot-deals/products/panty-liners",
-      company: "The Woman's Company",
+      company: "Woman's Company",
       company_url:
         "https://shop.woovly.com/collections/vendors?q=The%20Woman%27s%20Company",
       cart: "Add to cart",
@@ -58,7 +58,7 @@ const HotDeals = () => {
         "Portable & Biodegradable Stand and Pee Stick - The Woman's Company",
       productName_url:
         "https://shop.woovly.com/collections/hot-deals/products/stand-and-pee-stick",
-      company: "The Woman's Company",
+      company: "Woman's Company",
       company_url:
         "https://shop.woovly.com/collections/vendors?q=The%20Woman%27s%20Company",
       cart: "Add to cart",
@@ -93,7 +93,7 @@ const HotDeals = () => {
             image={item.image}
             product={item.productName}
             company={item.company}
-            priceNew={item.cart}
+            priceNew="₹ 299"
           />
         ))}
       </Grid>

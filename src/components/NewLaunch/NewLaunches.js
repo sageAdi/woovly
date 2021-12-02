@@ -2,9 +2,13 @@ import { Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import ProductCards from "../ProductCard/ProductCard";
 import globalStyle from "../../globalStyle";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const NewLaunches = () => {
   const globalClasses = globalStyle();
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("sm"));
   const newLaunch = [
     {
       image:
@@ -48,7 +52,11 @@ const NewLaunches = () => {
     },
   ];
   return (
-    <Container className={globalClasses.container}>
+    <Container
+      className={
+        matches ? globalClasses.mobileContainer : globalClasses.container
+      }
+    >
       <Typography variant="h2" className={globalClasses.heading}>
         New Launch
       </Typography>

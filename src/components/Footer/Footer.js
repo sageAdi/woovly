@@ -8,12 +8,21 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { Box } from "@mui/system";
 import useStyles from "./footerStyle";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Footer = () => {
   const classes = useStyles();
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <Box className={classes.footerWrapper}>
-      <Container className={classes.footerContainer}>
+      <Container
+        className={
+          matches ? classes.mobileFooterContainer : classes.footerContainer
+        }
+      >
         <Grid container justifyContent="space-between">
           <Grid item sx={8}>
             <div className={classes.footerLogo}>
@@ -70,18 +79,26 @@ const Footer = () => {
               </Grid>
               <Grid item sm>
                 <div className={classes.footerText}>
-                  <Link href="#" className={classes.link}>Your Account</Link>
+                  <Link href="#" className={classes.link}>
+                    Your Account
+                  </Link>
                 </div>
                 <div className={classes.footerText}>
-                  <Link href="#" className={classes.link}>Your Orders</Link>
+                  <Link href="#" className={classes.link}>
+                    Your Orders
+                  </Link>
                 </div>
               </Grid>
               <Grid item sm>
                 <div className={classes.footerText}>
-                  <Link href="#" className={classes.link}>Contact Us: +917406660500</Link>
+                  <Link href="#" className={classes.link}>
+                    Contact Us: +917406660500
+                  </Link>
                 </div>
                 <div className={classes.footerText}>
-                  <Link href="#" className={classes.link}>Email: orders@woovly.com</Link>
+                  <Link href="#" className={classes.link}>
+                    Email: orders@woovly.com
+                  </Link>
                 </div>
               </Grid>
             </Grid>

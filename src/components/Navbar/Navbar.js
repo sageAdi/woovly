@@ -61,7 +61,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="sticky" className={classes.appbar}>
+    <AppBar position="" className={classes.appbar}>
       <Container
         maxWidth="xl"
         className={globalClasses.container}

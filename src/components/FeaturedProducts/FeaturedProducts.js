@@ -2,9 +2,13 @@ import { Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import ProductCards from "../ProductCard/ProductCard";
 import globalStyle from "../../globalStyle";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const FeaturedProducts = () => {
+  const theme = useTheme();
   const globalClasses = globalStyle();
+  const matches = useMediaQuery(theme.breakpoints.down("sm"));
 
   const featuredProducts = [
     {
@@ -69,7 +73,11 @@ const FeaturedProducts = () => {
     },
   ];
   return (
-    <Container className={globalClasses.container}>
+    <Container
+      className={
+        matches ? globalClasses.mobileContainer : globalClasses.container
+      }
+    >
       <Typography variant="h6" className={globalClasses.heading}>
         Featured Products
       </Typography>

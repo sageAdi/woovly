@@ -8,8 +8,9 @@ import Hero from "./components/Hero/Hero";
 import HotDeals from "./components/HotDeals/HotDeals";
 import Navabar from "./components/Navbar/Navbar";
 import NewLaunches from "./components/NewLaunch/NewLaunches";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import ListItem from "./components/ListItem/ListItem";
+import { createTheme } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material";
+import Navigation from "./components/CustomContainer/CusotmContainer";
 
 const theme = createTheme({
   palette: {
@@ -26,20 +27,19 @@ const theme = createTheme({
 
 function App() {
   return (
-    <>
-      <ThemeProvider theme={theme}>
-        <Header />
-        {/* <ListItem /> */}
-        <Navabar />
-        <Hero />
-        <Categories />
-        <FeaturedBrands />
-        <FeaturedProducts />
-        <HotDeals />
-        <NewLaunches />
-        <Footer />
-      </ThemeProvider>
-    </>
+    <ThemeProvider theme={theme}>
+      <Navigation />
+      {/* <Header />
+      {/* <ListItem /> 
+      <Navabar /> */}
+      <Hero />
+      <Categories />
+      <FeaturedBrands />
+      <FeaturedProducts />
+      <HotDeals />
+      <NewLaunches />
+      <Footer />
+    </ThemeProvider>
   );
 }
 

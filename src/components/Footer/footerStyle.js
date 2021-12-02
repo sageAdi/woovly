@@ -8,6 +8,10 @@ const useStyles = makeStyles({
     padding: ["20px 95px 50px 95px", "!important"],
     margin: ["50px 0px 0px 0px", "!important"],
   },
+  mobileFooterContainer: {
+    padding: ["20px 12px 50px 12px", "!important"],
+    margin: ["50px 0px 0px 0px", "!important"],
+  },
   footerLogo: {
     marginTop: "20px",
   },

@@ -2,10 +2,13 @@ import { Container, Typography, Grid } from "@mui/material";
 import React from "react";
 import Card from "../Cards/Cards";
 import globalStyle from "../../globalStyle";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Categories = () => {
   const globalClasses = globalStyle();
-
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("sm"));
   const data = [
     {
       image:
@@ -44,7 +47,11 @@ const Categories = () => {
     },
   ];
   return (
-    <Container className={globalClasses.container}>
+    <Container
+      className={
+        matches ? globalClasses.mobileContainer : globalClasses.container
+      }
+    >
       <Typography variant="h6" className={globalClasses.heading}>
         Caterogies
       </Typography>
@@ -54,7 +61,7 @@ const Categories = () => {
             key={i}
             image={item.image}
             name={item.name}
-            width="135px"
+            width="50%"
             boxShadow={0}
           />
         ))}

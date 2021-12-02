@@ -2,9 +2,13 @@ import { Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import globalStyle from "../../globalStyle";
 import BrandsCards from "../Cards/BrandsCards";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const FeaturedBrands = () => {
+  const theme = useTheme();
   const globalClasses = globalStyle();
+  const matches = useMediaQuery(theme.breakpoints.down("sm"));
 
   const data = [
     {
@@ -33,13 +37,21 @@ const FeaturedBrands = () => {
     },
   ];
   return (
-    <Container className={globalClasses.container}>
+    <Container
+      className={
+        matches ? globalClasses.mobileContainer : globalClasses.container
+      }
+    >
       <Typography variant="h6" className={globalClasses.heading}>
         Featured Brands
       </Typography>
       <Grid container spacing={2} justifyContent="center">
         {data.map((item, i) => (
-          <BrandsCards key={i} image={item.image} width="150px" />
+          <BrandsCards
+            key={i}
+            image={item.image}
+            width={matches ? "100%" : "150px"}
+          />
         ))}
       </Grid>
     </Container>

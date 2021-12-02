@@ -61,7 +61,7 @@ export default function ProductCards({
               textAlign="start"
               color="secondary"
               variant="contained"
-              sx={{ position: "absolute", bottom: 0 }}
+              sx={{ position: "absolute", bottom: 0, marginTop: 10 }}
             >
               {priceNew}
             </Button>

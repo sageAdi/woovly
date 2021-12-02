@@ -20,6 +20,9 @@ import LockOpenRoundedIcon from "@mui/icons-material/LockOpenRounded";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
 import { makeStyles } from "@mui/styles";
 import CustomPopover from "../Popover/CustomPopover";
+import globalStyle from "../../globalStyle";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const useStyles = makeStyles({
   inputField: {
@@ -28,6 +31,11 @@ const useStyles = makeStyles({
       borderTopLeftRadius: 0,
       borderBottomLeftRadius: 0,
       borderBottomRightRadius: 12,
+    },
+  },
+  mobileInputField: {
+    [`& fieldset`]: {
+      bordeRadius: 20,
     },
   },
   headerBtn: {
@@ -50,10 +58,15 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   paddingTop: theme.spacing(1),
   paddingBottom: theme.spacing(2),
   // Override media queries injected by theme.mixins.toolbar
-  "@media all": {
-    minHeight: 128,
+  [theme.breakpoints.down("sm")]: {
+    minHeight: 80,
   },
+  minHeight: 128,
 }));
+const NavItem = styled(Button)({
+  boxShadow: 0,
+  color: "black",
+});
 
 export default function ProminentAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -77,6 +90,10 @@ export default function ProminentAppBar() {
   };
 
   const classes = useStyles();
+  const theme = useTheme();
+  const globalClasses = globalStyle();
+  const matches = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <AppBar position="sticky" sx={{ backgroundColor: "#fff" }}>
       <StyledToolbar>
@@ -86,8 +103,15 @@ export default function ProminentAppBar() {
             flexGrow: 1,
             overflow: "hidden",
           }}
+          className={
+            matches ? globalClasses.mobileContainer : globalClasses.container
+          }
         >
-          <Grid container sx={{ margin: "1rem" }}>
+          <Grid
+            container
+            // sx={{ margin: "1rem" }}
+            justifyContent="space-around"
+          >
             <Grid item xs={2}>
               <img
                 src="https://cdn.shopify.com/s/files/1/0522/7020/3059/files/woovly_logo_red_f915afbe-9117-4eea-967c-7cd77d807175_120x@2x.png?v=1634825398"
@@ -95,7 +119,12 @@ export default function ProminentAppBar() {
                 className="logo"
               />
             </Grid>
-            <Grid item xs={8} sx={{ display: { xs: "none", sm: "block" } }}>
+            <Grid
+              item
+              xs={8}
+              md={8}
+              sx={{ display: { xs: "none", sm: "block" } }}
+            >
               <Box sx={{ display: "flex" }}>
                 <FormControl sx={{ width: 200 }}>
                   <Select
@@ -135,7 +164,7 @@ export default function ProminentAppBar() {
                 />
               </Box>
             </Grid>
-            <Grid item xs={2}>
+            <Grid item xs={2} sx={{ display: "flex" }}>
               <IconButton size="small" className={classes.headerBtn}>
                 <LockOpenRoundedIcon />
                 <Typography className={classes.btnText}>Login</Typography>
@@ -144,6 +173,22 @@ export default function ProminentAppBar() {
                 <LocalMallIcon />
                 <Typography className={classes.btnText}>Cart</Typography>
               </IconButton>
+            </Grid>
+            <Grid item xs={12} md={0} sx={{ display: { xs: "block", sm: "none" } }}>
+              <TextField
+                id="outlined-basic"
+                placeholder="Search for brand, products, etc"
+                fullWidth
+                inputProps={{
+                  style: {
+                    paddingTop: 6,
+                    paddingRight: 12,
+                    paddingBottom: 6,
+                    paddingLeft: 12,
+                  },
+                }}
+                className={classes.mobileInputField}
+              />
             </Grid>
           </Grid>
           <Grid container>

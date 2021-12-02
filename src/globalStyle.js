@@ -10,6 +10,9 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: ["20px", "!important"],
   },
   container: {
+    [theme.breakpoints.down("xs")]: {
+      padding: ["0px 12px", "!important"],
+    },
     padding: ["0px 95px", "!important"],
     margin: ["0px", "!important"],
   },

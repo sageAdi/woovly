@@ -1,6 +1,6 @@
 import { makeStyles } from "@mui/styles";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   footerWrapper: {
     backgroundColor: "#000",
   },
@@ -20,7 +20,6 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: ["22.44px", "!important"],
     padding: ["0px 12px 0px 12px", "!important"],
     marginRight: ["10px", "!important"],
-    backgroundColor: theme.palette.primary.main,
   },
   footerText: {
     fontSize: ["12px", "!important"],
@@ -36,8 +35,10 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     textDecoration: ["none", "!important"],
-    "& hover": {},
+    "&:hover": {
+      color: "#FF0000",
+    },
   },
-}));
+});
 
 export default useStyles;

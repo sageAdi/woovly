@@ -18,7 +18,7 @@ const useStyles = makeStyles({
 export default function ActionAreaCard({ image, name, width }) {
   const classes = useStyles();
   return (
-    <Grid item>
+    <Grid item xs={4} md>
       <Card
         sx={{
           maxWidth: 130,

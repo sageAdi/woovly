@@ -63,23 +63,25 @@ const Footer = () => {
                   </Link>
                 </div>
                 <div className={classes.footerText}>
-                  <Link href="#">Carrers</Link>
+                  <Link href="#" className={classes.link}>
+                    Carrers
+                  </Link>
                 </div>
               </Grid>
               <Grid item sm>
                 <div className={classes.footerText}>
-                  <Link href="#">Your Account</Link>
+                  <Link href="#" className={classes.link}>Your Account</Link>
                 </div>
                 <div className={classes.footerText}>
-                  <Link href="#">Your Orders</Link>
+                  <Link href="#" className={classes.link}>Your Orders</Link>
                 </div>
               </Grid>
               <Grid item sm>
                 <div className={classes.footerText}>
-                  <Link href="#">Contact Us: +917406660500</Link>
+                  <Link href="#" className={classes.link}>Contact Us: +917406660500</Link>
                 </div>
                 <div className={classes.footerText}>
-                  <Link href="#">Email: orders@woovly.com</Link>
+                  <Link href="#" className={classes.link}>Email: orders@woovly.com</Link>
                 </div>
               </Grid>
             </Grid>
@@ -90,9 +92,9 @@ const Footer = () => {
               <InstagramIcon color="primary" />
             </div>
             <div className={classes.termsSection}>
-              <Link>Terms of Service•</Link>
-              <Link>Privacy Policy•</Link>
-              <Link>Refund Policy</Link>
+              <Link className={classes.link}>Terms of Service•</Link>
+              <Link className={classes.link}>Privacy Policy•</Link>
+              <Link className={classes.link}>Refund Policy</Link>
             </div>
             <div className={classes.footerText}>
               Woovly India Private Limited

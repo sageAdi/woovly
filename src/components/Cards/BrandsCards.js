@@ -18,11 +18,11 @@ const useStyles = makeStyles({
 export default function BrandsCards({ image, name, width = "auto" }) {
   const classes = useStyles();
   return (
-    <Grid item>
+    <Grid item xs={4} md>
       <Card
         sx={{
           maxWidth: { width },
-          "& hover": { backgroundColor: "transparent" },
+          "& :hover": { backgroundColor: "transparent" },
         }}
       >
         <CardActionArea>

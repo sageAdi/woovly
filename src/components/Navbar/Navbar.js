@@ -13,6 +13,8 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import globalStyle from "../../globalStyle";
 import { makeStyles } from "@mui/styles";
+import CustomPopover from "../Popover/CustomPopover";
+import CustomListItem from "../ListItem/ListItem";
 
 const pages = [
   "Brands",
@@ -27,11 +29,14 @@ const pages = [
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
-const useStyles = makeStyles((theme) => ({
-  appbar: {
-    backgroundColor: theme.primary.light,
+const useStyles = makeStyles({
+  root: {
+    "& :hover": {
+      backgroundColor: "transparent",
+      boxShadow: 0,
+    },
   },
-}));
+});
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -57,8 +62,12 @@ const ResponsiveAppBar = () => {
 
   return (
     <AppBar position="sticky" className={classes.appbar}>
-      <Container maxWidth="xl" className={globalClasses.container}>
-        <Toolbar disableGutters>
+      <Container
+        maxWidth="xl"
+        className={globalClasses.container}
+        sx={{ backgroundColor: "#fff" }}
+      >
+        <Toolbar disableGutters sx={{ backgroundColor: "#fff" }}>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -95,19 +104,31 @@ const ResponsiveAppBar = () => {
               ))}
             </Menu>
           </Box>
-          <img
-            src="https://cdn.shopify.com/s/files/1/0522/7020/3059/files/woovly_logo_red_f915afbe-9117-4eea-967c-7cd77d807175_120x@2x.png?v=1634825398"
-            alt="logo"
-            className="logo"
-          />
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0522/7020/3059/files/woovly_logo_red_f915afbe-9117-4eea-967c-7cd77d807175_120x@2x.png?v=1634825398"
+              alt="logo"
+              className="logo"
+            />
+          </Box>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+            }}
+          >
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{
+                  my: 2,
+                  color: "black",
+                  display: "block",
+                }}
+                className={classes.root}
               >
-                {page}
+                <CustomPopover navItem={page} subItem={pages} />
               </Button>
             ))}
           </Box>

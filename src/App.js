@@ -9,13 +9,14 @@ import HotDeals from "./components/HotDeals/HotDeals";
 import Navabar from "./components/Navbar/Navbar";
 import NewLaunches from "./components/NewLaunch/NewLaunches";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import ListItem from "./components/ListItem/ListItem";
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#595959",
+      main: "#677279",
       dark: "#212121",
-      light: "#677279",
+      light: "#595959",
     },
     secondary: {
       main: "#d81222",
@@ -28,6 +29,7 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <Header />
+        {/* <ListItem /> */}
         <Navabar />
         <Hero />
         <Categories />

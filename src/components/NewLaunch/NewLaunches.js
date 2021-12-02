@@ -14,6 +14,7 @@ const NewLaunches = () => {
         "https://shop.woovly.com/collections/newly-launched/products/furr-natural-hair-tonic-by-pee-safe",
       company: "Pee Safe",
       company_url: "https://shop.woovly.com/collections/pee-safe",
+      priceNew: "₹ 79",
     },
     {
       image:
@@ -23,6 +24,7 @@ const NewLaunches = () => {
         "https://shop.woovly.com/collections/newly-launched/products/furr-natural-hair-tonic-by-pee-safe",
       company: "Pee Safe",
       company_url: "https://shop.woovly.com/collections/pee-safe",
+      priceNew: "₹ 279",
     },
     {
       image:
@@ -32,6 +34,7 @@ const NewLaunches = () => {
         "https://shop.woovly.com/collections/newly-launched/products/furr-natural-hair-tonic-by-pee-safe",
       company: "Pee Safe",
       company_url: "https://shop.woovly.com/collections/pee-safe",
+      priceNew: "₹ 59",
     },
     {
       image:
@@ -41,6 +44,7 @@ const NewLaunches = () => {
         "https://shop.woovly.com/collections/newly-launched/products/furr-natural-hair-tonic-by-pee-safe",
       company: "Pee Safe",
       company_url: "https://shop.woovly.com/collections/pee-safe",
+      priceNew: "₹ 479",
     },
   ];
   return (
@@ -55,7 +59,7 @@ const NewLaunches = () => {
             image={item.image}
             product={item.productName}
             company={item.company}
-            priceNew={item.cart}
+            priceNew={item.priceNew}
             width="240px"
           />
         ))}

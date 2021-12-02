@@ -9,7 +9,7 @@ const useStyles = makeStyles({
     fontSize: ["14px", "!important"],
     fontWeight: ["400px", "!important"],
     color: "#595959",
-    "& :hover": {
+    "&:hover": {
       backgroundColor: "transparent",
       boxShadow: 0,
     },

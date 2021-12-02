@@ -31,7 +31,7 @@ const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const useStyles = makeStyles({
   root: {
-    "& :hover": {
+    "&:hover": {
       backgroundColor: "transparent",
       boxShadow: 0,
     },

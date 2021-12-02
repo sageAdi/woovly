@@ -3,7 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, Grid } from "@mui/material";
+import { Button, CardActionArea, CardActions, Grid } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles({
@@ -31,7 +31,7 @@ export default function ProductCards({
         sx={{
           maxWidth: width,
           minHeight: 400,
-          "& hover": { backgroundColor: "transparent" },
+          "&:hover": { backgroundColor: "transparent" },
         }}
       >
         <CardActionArea>
@@ -53,15 +53,19 @@ export default function ProductCards({
             >
               {company}
             </Typography>
-            <Typography
+          </CardContent>
+          <CardActions>
+            <Button
               gutterBottom
               component="div"
               textAlign="start"
-              color="secondary.main"
+              color="secondary"
+              variant="contained"
+              sx={{ position: "absolute", bottom: 0 }}
             >
               {priceNew}
-            </Typography>
-          </CardContent>
+            </Button>
+          </CardActions>
         </CardActionArea>
       </Card>
     </Grid>

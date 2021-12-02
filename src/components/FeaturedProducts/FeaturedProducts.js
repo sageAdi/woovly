@@ -16,7 +16,7 @@ const FeaturedProducts = () => {
         "https://shop.woovly.com/collections/featured/products/sanfe-breast-nipple-caring-balm-for-new-mothers-15gm-with-calendula-oil-cocoa-butter-strawberry",
       company: "Sanfe",
       company_url: "https://shop.woovly.com/collections/sanfe",
-      priceNew: "Sale price\n₹ 79",
+      priceNew: "₹ 79",
       soldOption: "Sold out",
     },
     {
@@ -28,6 +28,7 @@ const FeaturedProducts = () => {
         "https://shop.woovly.com/collections/featured/products/lotus-botanicals-natural-baking-soda-deep-cleansing-face-wash-180ml",
       company: "Lotus Botanicals",
       company_url: "https://shop.woovly.com/collections/lotus-botanicals",
+      priceNew: "₹ 89",
       soldOption: "Sold out",
     },
     {
@@ -39,7 +40,7 @@ const FeaturedProducts = () => {
         "https://shop.woovly.com/collections/featured/products/naked-raw-coffee-face-wash-with-white-water-lily",
       company: "mCaffeine",
       company_url: "https://shop.woovly.com/collections/mcaffeine",
-      priceNew: "Sale price\n₹ 325",
+      priceNew: "₹ 325",
       soldOption: "Add to cart",
     },
     {
@@ -51,7 +52,7 @@ const FeaturedProducts = () => {
         "https://shop.woovly.com/collections/featured/products/tru-hair-onion-hair-oil-with-heater-110ml",
       company: "Tru Hair",
       company_url: "https://shop.woovly.com/collections/tru-hair",
-      priceNew: "Sale price\n₹ 279",
+      priceNew: "₹ 279",
       soldOption: "Add to cart",
     },
     {
@@ -63,7 +64,7 @@ const FeaturedProducts = () => {
         "https://shop.woovly.com/collections/featured/products/bamboo-toothbrush-charcoal-bristles-with-reusable-jute-pouch",
       company: "The Bamboo Bae",
       company_url: "https://shop.woovly.com/collections/the-bamboo-bae",
-      priceNew: "Sale price\n₹ 79",
+      priceNew: "₹ 79",
       soldOption: "Add to cart",
     },
   ];
